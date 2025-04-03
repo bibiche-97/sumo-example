@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2025-04-03 16:46:21 by Eclipse SUMO netconvert Version 1.22.0
+<netconvertConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
+
+    <input>
+        <type-files value="${SUMO_HOME}/data/typemap/osmNetconvert.typ.xml,${SUMO_HOME}/data/typemap/osmNetconvertAerialway.typ.xml"/>
+        <osm-files value="osm_bbox.osm.xml.gz"/>
+    </input>
+
+    <output>
+        <output-file value="osm.net.xml.gz"/>
+        <output.street-names value="true"/>
+        <output.original-names value="true"/>
+        <ptstop-output value="osm_stops.add.xml"/>
+        <ptline-output value="osm_ptlines.xml"/>
+    </output>
+
+    <projection>
+        <proj.utm value="true"/>
+    </projection>
+
+    <processing>
+        <geometry.remove value="true"/>
+        <roundabouts.guess value="true"/>
+        <lefthand value="true"/>
+    </processing>
+
+    <tls_building>
+        <tls.discard-simple value="true"/>
+        <tls.join value="true"/>
+        <tls.guess-signals value="true"/>
+        <tls.default-type value="actuated"/>
+    </tls_building>
+
+    <ramp_guessing>
+        <ramps.guess value="true"/>
+    </ramp_guessing>
+
+    <junctions>
+        <junctions.join value="true"/>
+        <junctions.corner-detail value="5"/>
+    </junctions>
+
+    <railway>
+        <railway.topology.repair value="true"/>
+    </railway>
+
+</netconvertConfiguration>
+-->
+
+<additional xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/additional_file.xsd">
+    <busStop id="-4754647807" lane="-197286096#4_0" startPos="15.80" endPos="30.80" friendlyPos="true"/>
+    <busStop id="-4754647809" lane="-27091096#1_0" startPos="16.33" endPos="31.33" friendlyPos="true"/>
+    <busStop id="4697158007" name="121" lane="218983290#10_0" startPos="42.27" endPos="57.27" friendlyPos="true"/>
+    <busStop id="4697158008" name="DDD 121" lane="218983290#2_0" startPos="21.26" endPos="36.26" friendlyPos="true"/>
+    <busStop id="4697158009" lane="197286085#0_0" startPos="0.00" endPos="15.00" friendlyPos="true"/>
+    <busStop id="4754586063" lane="108821778#0_0" startPos="19.48" endPos="34.48" friendlyPos="true"/>
+    <busStop id="4754588023" lane="431665127#1_0" startPos="12.58" endPos="27.58" friendlyPos="true"/>
+    <busStop id="4754647804" lane="476073360#0_0" startPos="33.69" endPos="48.69" friendlyPos="true"/>
+    <busStop id="4754647805" lane="476073360#3_0" startPos="40.59" endPos="55.59" friendlyPos="true"/>
+    <busStop id="4754647808" lane="197286096#1_0" startPos="46.26" endPos="61.26" friendlyPos="true"/>
+    <busStop id="4754647810" lane="-108697099_0" startPos="107.02" endPos="122.02" friendlyPos="true"/>
+    <busStop id="4754647811" lane="162751427#1_0" startPos="26.39" endPos="41.39" friendlyPos="true"/>
+    <busStop id="4825582737" name="DDD 4" lane="475478702_0" startPos="135.34" endPos="150.34" friendlyPos="true"/>
+    <busStop id="5044774507" lane="430810287#0_0" startPos="130.14" endPos="145.14" friendlyPos="true"/>
+</additional>

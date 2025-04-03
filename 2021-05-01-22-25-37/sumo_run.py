@@ -9,7 +9,9 @@ import pandas as pd
 
 def getdatetime():
         utc_now = pytz.utc.localize(datetime.datetime.utcnow())
+        # utc_now = pytz.utc.localize(datetime.timezone.utc())
         currentDT = utc_now.astimezone(pytz.timezone("Asia/Singapore"))
+        #currentDT = utc_now.astimezone(pytz.timezone("Europe/Paris"))
         DATIME = currentDT.strftime("%Y-%m-%d %H:%M:%S")
         return DATIME
 
@@ -33,10 +35,10 @@ packBigData = []
 
 while traci.simulation.getMinExpectedNumber() > 0:
        
-        traci.simulationStep();
+        traci.simulationStep()
 
-        vehicles=traci.vehicle.getIDList();
-        trafficlights=traci.trafficlight.getIDList();
+        vehicles=traci.vehicle.getIDList()
+        trafficlights=traci.trafficlight.getIDList()
 
         for i in range(0,len(vehicles)):
 
@@ -179,6 +181,7 @@ columnnames = ['dateandtime', 'vehid', 'coord', 'gpscoord', 'spd', 'edge', 'lane
                        'tflight', 'tl_state', 'tl_phase_duration', 'tl_lanes_controlled', 'tl_program', 'tl_next_switch']
 dataset = pd.DataFrame(packBigData, index=None, columns=columnnames)
 dataset.to_excel("output.xlsx", index=False)
+dataset.to_csv("output.csv", index=False)
 time.sleep(5)
 
 
